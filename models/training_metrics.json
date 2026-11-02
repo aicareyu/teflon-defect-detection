@@ -1,0 +1,29 @@
+{
+  "approach": "embedding_sklearn",
+  "selected_model": "logreg",
+  "backbone": "resnet18",
+  "image_size": 224,
+  "use_crop": true,
+  "class_to_idx": {
+    "good": 0,
+    "not_good": 1
+  },
+  "idx_to_class": {
+    "0": "good",
+    "1": "not_good"
+  },
+  "n_train_images": 15,
+  "n_good": 7,
+  "n_not_good": 8,
+  "metrics": {
+    "protocol": "refit_all_images_no_holdout",
+    "n_samples": 15,
+    "note": "Refit after live teach. No held-out accuracy is reported."
+  },
+  "warnings": [
+    "Dataset is very small. This model is intended for DEMONSTRATION only and is not yet production validated.",
+    "This is a proof-of-concept visual inspection model trained on a very small dataset. Results must be validated with a significantly larger production dataset before deployment.",
+    "Model performance may be affected by camera pose, lighting, product orientation and background. For production deployment, images should be captured using controlled camera and lighting conditions."
+  ],
+  "encoder_name": "resnet18"
+}

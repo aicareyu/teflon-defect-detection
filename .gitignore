@@ -1,0 +1,23 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+.env
+*.log
+
+# Live captures and debug dumps
+logs/*
+!logs/.gitkeep
+_diag_*.py
+_shot_crop.png
+
+# Duplicate sample photos copied to the project root
+/good-part-*.jpeg
+/not-good-part*.jpeg

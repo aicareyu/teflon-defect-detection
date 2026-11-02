@@ -1,0 +1,12 @@
+{
+  "class_to_idx": {
+    "good": 0,
+    "not_good": 1
+  },
+  "idx_to_class": {
+    "0": "good",
+    "1": "not_good"
+  },
+  "n_good": 7,
+  "n_not_good": 8
+}
